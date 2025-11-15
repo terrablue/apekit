@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import args from "@rcompat/args";
 import assert from "@rcompat/assert";
-import json from "@rcompat/package/json";
+import json from "@rcompat/fs/project/package";
 
 const pkg_json = await json();
 
