@@ -7,7 +7,7 @@ const pkg_json = await json();
 
 if (args[0] === "bump") {
   const type = args[1];
-  assert(["major", "minor", "patch"].includes(type),
+  assert.true(["major", "minor", "patch"].includes(type),
     "can only bump major, minor or patch")
   const package_json = await pkg_json.json<{ version: string }>();
   const { version } = package_json;
