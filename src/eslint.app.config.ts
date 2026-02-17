@@ -45,6 +45,15 @@ export default (tsconfigRootDir: string): any => tseslint.config(
           "ignoreRestSiblings": true
         }
       ],
+      "@typescript-eslint/strict-boolean-expressions": ["error", {
+        "allowString": false,
+        "allowNumber": false,
+        "allowNullableObject": false,
+        "allowNullableBoolean": false,
+        "allowNullableString": false,
+        "allowNullableNumber": false,
+        "allowAny": false
+      }],
       "@stylistic/no-trailing-spaces": "warn",
       "@stylistic/max-len": warn({ code: 80 }),
       "@stylistic/key-spacing": "warn",
